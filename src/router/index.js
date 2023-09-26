@@ -12,35 +12,35 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
     },
     {
       path: '/notes',
       name: 'notes',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/NotesView.vue')
     },
     {
       path: '/test',
       name: 'test',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/TestView.vue')
     },
     {
       path: '/loop',
       name: 'loop',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/LoopView.vue')
     }
+    ,
+    {
+      path: '/pays',
+      name: 'pays',
+      component: () => import('../views/PaysView.vue')
+    },
+    {
+      path: '/fiche-pays/:id',
+      name: 'fiche-pays',
+      component: import('../views/FichePaysView.vue'),
+      props: true
+    },
   ]
 })
 

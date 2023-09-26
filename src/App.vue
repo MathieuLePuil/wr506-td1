@@ -16,6 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/notes">Notes</RouterLink>
         <RouterLink to="/test">Test</RouterLink>
         <RouterLink to="/loop">Loop</RouterLink>
+        <RouterLink to="/pays">Pays</RouterLink>
       </nav>
     </div>
   </header>
