@@ -41,6 +41,12 @@ const router = createRouter({
       component: import('../views/FichePaysView.vue'),
       props: true
     },
+    {
+      path: '/recherche',
+      name: 'recherche',
+      component: () => import('../views/Recherche.vue')
+    }
+
   ]
 })
 
