@@ -9,7 +9,8 @@ const data = ref('')
 
 onMounted(async () => {
     const response = await axios.get('https://restcountries.com/v3.1/alpha/' + id)
-    data.value = response.data
+    data.value = response.data;
+
 })
 </script>
 
